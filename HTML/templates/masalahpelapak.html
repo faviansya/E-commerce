@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section class="section-pagetop bg-dark-50">
+    <div class="container clearfix">
+        <h2 class=" text-white">Laporan Pelapak Bermasalah</h2>
+
+    </div> <!-- container //  -->
+</section>
+
+<div class="container mt-5">
+    <form>
+        <div class="form-group col-lg-6">
+            <label for="exampleFormControlInput1">Judul</label>
+            <input type="title" class="form-control" id="exampleFormControlInput1"
+                placeholder="Masukkan Judul Dan Tema Pengajuan">
+        </div>
+        <div class="form-group col-lg-3">
+            <label for="exampleFormControlInput1">Nama Pelapak</label>
+            <input type="title" class="form-control" id="exampleFormControlInput1" placeholder="Masukkan Nama Pelapak">
+        </div>
+        <div class="form-group col-lg-6">
+            <label for="exampleFormControlTextarea1">Ceritakan Masalah Anda</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                placeholder="Ceritakan Masalah Anda Disini"></textarea>
+        </div>
+        <div class="form-group ml-3">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

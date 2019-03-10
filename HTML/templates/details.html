@@ -1,0 +1,207 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section class="section-topbar border-top padding-y-sm">
+    <div class="container-fluid">
+        <span>Warung 999 The Best Of The Best</span> &nbsp <span class="text-success">Best Of The Year</span>
+    </div> <!-- container.// -->
+</section>
+<section class="section-content bg padding-y-sm">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-10 col-md-9 col-sm-12">
+                <main class="card">
+                    <div class="row no-gutters">
+                        <aside class="col-sm-6 border-right">
+                            <article class="gallery-wrap">
+                                <div class="img-big-wrap">
+                                    <div> <a href="images/items/1.jpg" data-fancybox=""><img
+                                                src="{{ url_for('static', filename='images/details/pitsa2.jpg') }}"></a></div>
+                                </div> <!-- slider-product.// -->
+                                <div class="img-small-wrap">
+                                    <div class="item-gallery"> <img src="{{ url_for('static', filename='images/details/pitsa.jpg') }}"></div>
+                                    <div class="item-gallery"> <img src="{{ url_for('static', filename='images/details/pitsa3.jpg') }}"></div>
+                                    <div class="item-gallery"> <img src="{{ url_for('static', filename='images/details/pitsa4.jpg') }}"></div>
+                                    <div class="item-gallery"> <img src="{{ url_for('static', filename='images/details/pitsa2.jpg') }}"></div>
+                                </div> <!-- slider-nav.// -->
+                            </article> <!-- gallery-wrap .end// -->
+                        </aside>
+                        <aside class="col-sm-6">
+                            <article class="card-body">
+                                <!-- short-info-wrap -->
+                                <h3 class="title mb-3">Pitsa Enak Dari Itali</h3>
+
+                                <div class="mb-3">
+                                    <var class="price h3 text-success">
+                                        <span class="currency">Rp. </span><span class="num">50.000</span>
+                                    </var>
+                                </div> <!-- price-detail-wrap .// -->
+                                <dl>
+                                    <dt>Deskripsi</dt>
+                                    <dd>
+                                        <p>Pitsa Ini Terbuat dari daging sapi pilihan bossque, jadi enak banget
+                                            keju yang dibuat berupa keju mojarella, yang sangat enak sekali. jadi 
+                                        gag bakalan rugi deh kalau bei fitsa yang satu inih. </p>
+                                    </dd>
+                                </dl>
+                                <dl class="row">
+                                    <dt class="col-sm-3">Kedaluwarsa</dt>
+                                    <dd class="col-sm-9">: 3 Hari Setelah Dibuka</dd>
+
+                                    <dt class="col-sm-3">Kategori</dt>
+                                    <dd class="col-sm-9">: Makanan Moderen </dd>
+
+                                    <dt class="col-sm-3">Dikirim Dari</dt>
+                                    <dd class="col-sm-9">: Kediri </dd>
+                                </dl>
+                                <div class="rating-wrap">
+
+                                    <ul class="rating-stars">
+                                        <li style="width:80%" class="stars-active">
+                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <div class="label-rating"> 132 Nilai</div>
+                                    <div class="label-rating">154 Terjual </div>
+                                </div> <!-- rating-wrap.// -->
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <dl class="dlist-inline">
+                                            <dt>Qty: </dt>
+                                            <dd>
+                                                <select class="form-control form-control-sm" style="width:70px;">
+                                                    <option> 1 </option>
+                                                    <option> 2 </option>
+                                                    <option> 3 </option>
+                                                </select>
+                                            </dd>
+                                        </dl> <!-- item-property .// -->
+                                    </div> <!-- col.// -->
+                                </div> <!-- row.// -->
+                                <hr>
+                                <a href="#" class="btn  btn-success"> <i class="fa fa-envelope"></i> Contact Supplier
+                                </a>
+                                <a href="#" class="btn  btn-outline-success"> Start Order </a>
+                                <!-- short-info-wrap .// -->
+                            </article> <!-- card-body.// -->
+                        </aside> <!-- col.// -->
+                    </div> <!-- row.// -->
+                </main> <!-- card.// -->
+
+                <!-- PRODUCT DETAIL .// -->
+
+            </div> <!-- col // -->
+            <aside class="col-xl-2 col-md-3 col-sm-12 text-center">
+                <div class="card">
+                    <div class="card-header ">
+                        Profil Penjual
+                    </div>
+                    <div class="card-body small">
+                        <div style="font-size: 15px;"> <u><b>Warung 999</b></u></div>
+                        <a href="#" class="img-wrap mt-3"> <img
+                                src="{{ url_for('static', filename='images/penjual/penjual.jpg') }}" height="130px"
+                                style="border-radius: 40%;"></a>
+                        <hr>
+                        Level: Good <br>
+                        Barang Terkirim: 1000
+                        <hr>
+                        Menerima 1.000.000 Pembeli
+                        <hr>
+                        Jarak Waktu Kirim: 1 Jam <br>
+                        Respon Penjual: 100%<br>
+                        <hr>
+                        <a href="">Kunjungi Profil</a>
+
+                    </div> <!-- card-body.// -->
+                </div> <!-- card.// -->
+
+            </aside> <!-- col // -->
+        </div> <!-- row.// -->
+        <div class="card mt-3">
+            <div class="card-header">
+                Rekomendasi Makanan Yang Mungkin Anda Suka
+            </div>
+            <div class="card-body row">
+                <div class="col-md-2 col-sm-3 col-lg-2">
+                    <figure class="item mb-3 text-center">
+                        <a href="#" class="img-wrap"> <img src="{{ url_for('static', filename='images/Home/1.jpg') }}" class="img-md"></a>
+                        <figcaption class="info-wrap">
+                            <a href="#" class="title">Salad Uenak</a>
+                            <div class="price-wrap mb-3">
+                                <span class="price-new">Rp. 32000</span> <del class="price-old">Rp. 31000</del>
+                            </div> <!-- price-wrap.// -->
+                        </figcaption>
+                    </figure> <!-- card-product // -->
+                </div> <!-- col.// -->
+                <div class="col-md-2 col-sm-3 col-lg-2">
+                    <figure class="item mb-3 text-center">
+                        <a href="#" class="img-wrap"> <img src="{{ url_for('static', filename='images/Home/22.jpg') }}" class="img-md"></a>
+                        <figcaption class="info-wrap">
+                            <a href="#" class="title">The Terong</a>
+                            <div class="price-wrap mb-3">
+                                <span class="price-new">Rp. 50000</span> <del class="price-old">Rp. 72000</del>
+                            </div> <!-- price-wrap.// -->
+                        </figcaption>
+                    </figure> <!-- card-product // -->
+                </div> <!-- col.// -->
+                <div class="col-md-2 col-sm-3 col-lg-2">
+                    <figure class="item mb-3">
+                        <a href="#" class="img-wrap"> <img src="{{ url_for('static', filename='images/Home/33.jpg') }}" class="img-md"></a>
+                        <figcaption class="info-wrap text-center">
+                            <a href="#" class="title">Capcai Goreng</a>
+                            <div class="price-wrap mb-3">
+                                <span class="price-new">Rp. 12000</span>
+                            </div> <!-- price-wrap.// -->
+                        </figcaption>
+                    </figure> <!-- card-product // -->
+                </div> <!-- col.// -->
+                <div class="col-md-2 col-sm-3 col-lg-2">
+                    <figure class="item mb-3">
+                        <a href="#" class="img-wrap"> <img src="{{ url_for('static', filename='images/Home/44.png') }}" class="img-md"></a>
+                        <figcaption class="info-wrap text-center">
+                            <a href="#" class="title">Stik Sapi Bakar</a>
+                            <div class="price-wrap mb-3">
+                                <span class="price-new">Rp. 122000</span>
+                            </div> <!-- price-wrap.// -->
+                        </figcaption>
+                    </figure> <!-- card-product // -->
+                </div> <!-- col.// -->
+                <div class="col-md-2 col-sm-3 col-lg-2">
+                    <figure class="item mb-3">
+                        <a href="#" class="img-wrap"> <img src="{{ url_for('static', filename='images/Home/55.jpg') }}" class="img-md"></a>
+                        <figcaption class="info-wrap text-center">
+                            <a href="#" class="title">Tongkol Tepung Goreng</a>
+                            <div class="price-wrap mb-3">
+                                <span class="price-new">Rp. 20000</span>
+                            </div> <!-- price-wrap.// -->
+                        </figcaption>
+                    </figure> <!-- card-product // -->
+                </div> <!-- col.// -->
+                <div class="col-md-2 col-sm-3 col-lg-2">
+                    <figure class="item mb-3">
+                        <a href="#" class="img-wrap"> <img src="{{ url_for('static', filename='images/Home/2.png') }}" class="img-md"></a>
+                        <figcaption class="info-wrap text-center">
+                            <a href="#" class="title">Buah-Buahan</a>
+                            <div class="price-wrap mb-3">
+                                <span class="price-new">Rp. 2000</span>
+                            </div> <!-- price-wrap.// -->
+                        </figcaption>
+                    </figure> <!-- card-product // -->
+                </div> <!-- col.// -->
+
+            </div> <!-- card-body.// -->
+        </div> <!-- card.// -->
+
+
+
+    </div><!-- container // -->
+</section>
+{% endblock %}

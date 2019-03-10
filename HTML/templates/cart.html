@@ -1,0 +1,265 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section class="section-content bg padding-y border-top">
+    <div class="container-fluid">
+
+        <div class="row">
+            <main class="col-sm-9">
+
+                <div class="card">
+                    <table class="table table-hover shopping-cart-wrap">
+                        <thead class="text-muted">
+                            <tr>
+                                <th scope="col">Produk</th>
+                                <th scope="col" width="120">Jumlah</th>
+                                <th scope="col" width="120">Harga</th>
+                                <th scope="col" class="text-right" width="200">Pilihan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <figure class="media">
+                                        <div class="img-wrap"><img
+                                                src="{{ url_for('static', filename='images/footer/1.jpg') }}"
+                                                class="img-thumbnail img-sm"></div>
+                                        <figcaption class="media-body">
+                                            <h6 class="title text-truncate"><u> Kacang</u> </h6>
+                                            <dl class="dlist-inline small">
+                                                <dt>Jumlah: </dt>
+                                                <dd>100</dd>
+                                            </dl>
+                                            <dl class="dlist-inline small">
+                                                <dt>Berat: </dt>
+                                                <dd>1 Kg</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </td>
+                                <td>
+                                    <select class="form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <div class="price-wrap">
+                                        <var class="price">Rp. 50.000</var>
+                                        <small class="text-muted">(Rp. 5000 each)</small>
+                                    </div> <!-- price-wrap .// -->
+                                </td>
+                                <td class="text-right">
+                                    <!-- <a data-original-title="Save to Wishlist" title="" href=""
+                                        class="btn btn-outline-success" data-toggle="tooltip"> <i
+                                            class="fa fa-heart"></i></a> -->
+                                    <a href="" class="btn btn-outline-danger"> × Remove</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <figure class="media">
+                                        <div class="img-wrap"><img
+                                                src="{{ url_for('static', filename='images/footer/2.jpg') }}"
+                                                class="img-thumbnail img-sm"></div>
+                                        <figcaption class="media-body">
+                                            <h6 class="title text-truncate"><u> Dageng</u> </h6>
+                                            <dl class="dlist-inline small">
+                                                <dt>Jumlah: </dt>
+                                                <dd>1</dd>
+                                            </dl>
+                                            <dl class="dlist-inline small">
+                                                <dt>Berat: </dt>
+                                                <dd>2 Kg</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </td>
+                                <td>
+                                    <select class="form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <div class="price-wrap">
+                                        <var class="price">Rp. 35.000 </var>
+                                        <small class="text-muted">(Rp. 7000 each)</small>
+                                    </div> <!-- price-wrap .// -->
+                                </td>
+                                <td class="text-right">
+                                    <!-- <a data-original-title="Save to Wishlist" title="" href=""
+                                        class="btn btn-outline-success" data-toggle="tooltip"> <i
+                                            class="fa fa-heart"></i></a> -->
+                                    <a href="" class="btn btn-outline-danger btn-round"> × Remove</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <figure class="media">
+                                        <div class="img-wrap"><img
+                                                src="{{ url_for('static', filename='images/footer/3.jpg') }}"
+                                                class="img-thumbnail img-sm"></div>
+                                        <figcaption class="media-body">
+                                            <h6 class="title text-truncate"><u> Terasi Udang</u> </h6>
+                                            <dl class="dlist-inline small">
+                                                <dt>Jumlah: </dt>
+                                                <dd>10</dd>
+                                            </dl>
+                                            <dl class="dlist-inline small">
+                                                <dt>Berat: </dt>
+                                                <dd>1 Kg</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </td>
+                                <td>
+                                    <select class="form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <div class="price-wrap">
+                                        <var class="price">Rp. 45.000 </var>
+                                        <small class="text-muted">(Rp.9000 each)</small>
+                                    </div> <!-- price-wrap .// -->
+                                </td>
+                                <td class="text-right">
+                                    <!-- <a data-original-title="Save to Wishlist" title="" href=""
+                                        class="btn btn-outline-success" data-toggle="tooltip"> <i
+                                            class="fa fa-heart"></i></a> -->
+                                    <a href="" class="btn btn-outline-danger btn-round"> × Remove</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <figure class="media">
+                                        <div class="img-wrap"><img
+                                                src="{{ url_for('static', filename='images/footer/4.jpg') }}"
+                                                class="img-thumbnail img-sm"></div>
+                                        <figcaption class="media-body">
+                                            <h6 class="title text-truncate"><u> Wortel Segar</u> </h6>
+                                            <dl class="dlist-inline small">
+                                                <dt>Jumlah: </dt>
+                                                <dd>10</dd>
+                                            </dl>
+                                            <dl class="dlist-inline small">
+                                                <dt>Berat: </dt>
+                                                <dd>1 Kg</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </td>
+                                <td>
+                                    <select class="form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <div class="price-wrap">
+                                        <var class="price">Rp. 54.000 </var>
+                                        <small class="text-muted">(Rp.10.000 each)</small>
+                                    </div> <!-- price-wrap .// -->
+                                </td>
+                                <td class="text-right">
+                                    <!-- <a data-original-title="Save to Wishlist" title="" href=""
+                                        class="btn btn-outline-success" data-toggle="tooltip"> <i
+                                            class="fa fa-heart"></i></a> -->
+                                    <a href="" class="btn btn-outline-danger btn-round"> × Remove</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <figure class="media">
+                                        <div class="img-wrap"><img
+                                                src="{{ url_for('static', filename='images/footer/5.jpg') }}"
+                                                class="img-thumbnail img-sm"></div>
+                                        <figcaption class="media-body">
+                                            <h6 class="title text-truncate"><u> Ayam Bakar</u> </h6>
+                                            <dl class="dlist-inline small">
+                                                <dt>Jumlah: </dt>
+                                                <dd>10</dd>
+                                            </dl>
+                                            <dl class="dlist-inline small">
+                                                <dt>Berat: </dt>
+                                                <dd>1 Kg</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </td>
+                                <td>
+                                    <select class="form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <div class="price-wrap">
+                                        <var class="price">Rp. 99.000 </var>
+                                        <small class="text-muted">(Rp.9000 each)</small>
+                                    </div> <!-- price-wrap .// -->
+                                </td>
+                                <td class="text-right">
+                                    <!-- <a data-original-title="Save to Wishlist" title="" href=""
+                                        class="btn btn-outline-success" data-toggle="tooltip"> <i
+                                            class="fa fa-heart"></i></a> -->
+                                    <a href="" class="btn btn-outline-danger btn-round"> × Remove</a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                        <thead class="text-dark border-top">
+                            <tr>
+                                <th scope="col">Total</th>
+                                <th scope="col" width="120">Qty: 5</th>
+                                <th scope="col" width="120">Rp. 220.000</th>
+                            </tr>
+
+                        </thead>
+                    </table>
+
+                </div> <!-- card.// -->
+
+            </main> <!-- col.// -->
+            <aside class="col-xl-3 col-md-3 col-sm-12 text-center">
+                <div class="card">
+                    <div class="card-header ">
+                        Profil Kamu
+                    </div>
+                    <div class="card-body small">
+                        <div style="font-size: 15px;"> <u><b>Warung 999</b></u></div>
+                        <a href="{{url_for('myprofile')}}" class="img-wrap mt-3"> <img
+                                src="{{ url_for('static', filename='images/penjual/penjual.jpg') }}" height="130px"
+                                style="border-radius: 40%;"></a>
+                        <hr>
+                        Level: Good <br>
+                        Barang Terkirim: 1000
+                        <hr>
+                        Menerima 1.000.000 Pembeli
+                        <hr>
+                        Jarak Waktu Kirim: 1 Jam <br>
+                        Respon Penjual: 100%<br>
+                        <hr>
+                        <a href="{{url_for('myprofile')}}">Kunjungi Profil</a>
+
+                    </div> <!-- card-body.// -->
+                </div> <!-- card.// -->
+
+            </aside> <!-- col // -->
+        </div>
+
+    </div> <!-- container .//  -->
+</section>
+{% endblock %}

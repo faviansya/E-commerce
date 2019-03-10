@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section id="features" class="section-features bg2 padding-y-lg">
+    <div class="container">
+
+        <header class="section-heading text-center">
+            <h2 class="title-section">Kami Memberi Jaminan </h2>
+            <p class="lead"> Pada Tiap Transaksinya Dilakukan Oleh Mesin Canggih </p>
+        </header><!-- sect-heading -->
+
+        <div class="row">
+            <aside class="col-sm-4">
+                <figure class="itembox text-center">
+                    <span class="icon-wrap icon-lg bg-secondary white"><img height="86px"
+                            src="{{ url_for('static', filename='images/Pembayaran/Aman.png') }}" alt=""></span>
+                    <figcaption class="text-wrap">
+                        <h4 class="title">Aman</h4>
+                        <p>Platform E-Commerce Kami Sangat Aman dan Menjamin Kelancaran Pengguna Dalam Bertransaksi,
+                            Bebas Penipuan.</p>
+                    </figcaption>
+                </figure> <!-- iconbox // -->
+            </aside> <!-- col.// -->
+            <aside class="col-sm-4">
+                <figure class="itembox text-center">
+                    <span class="icon-wrap icon-lg bg-secondary  white"><img height="86px"
+                            src="{{ url_for('static', filename='images/Pembayaran/Cepat.png') }}" alt=""></i></span>
+                    <figcaption class="text-wrap">
+                        <h4 class="title">Cepat</h4>
+                        <p>Kami Mengedepankan Pengiriman Menggunakan Kurir Yang Sudah Terpercaya Sejak Jaman Dahulu </p>
+                    </figcaption>
+                </figure> <!-- iconbox // -->
+            </aside> <!-- col.// -->
+            <aside class="col-sm-4">
+                <figure class="itembox text-center">
+                    <span class="icon-wrap icon-lg bg-secondary  white"><img height="86px"
+                            src="{{ url_for('static', filename='images/Pembayaran/Mudah.png') }}" alt=""> </span>
+                    <figcaption class="text-wrap">
+                        <h4 class="title">Mudah</h4>
+                        <p>Platform E-Commerce kami Mudah Digunakan bagi semua kalangan,Baik Awam Maupun Expert, Tinggal
+                            klik -> Bayar -> Beres. </p>
+                    </figcaption>
+                </figure> <!-- iconbox // -->
+            </aside> <!-- col.// -->
+        </div> <!-- row.// -->
+    </div><!-- container // -->
+</section>
+<section id="content" class="section-content padding-y-lg">
+    <div class="container">
+
+        <header class="section-heading text-center">
+            <h2 class="title-section">Cara Transfer Bank</h2>
+            <p class="lead"> Transfer Menggunakan ATM </p>
+        </header><!-- sect-heading -->
+
+        <div class="row justify-content-center">
+            <article class="col-md-6 text-center">
+                <img width="100%" src="{{ url_for('static', filename='images/Pembayaran/transfer.jpg') }}" alt="">
+
+            </article> <!-- col.// -->
+        </div> <!-- row.// -->
+
+    </div> <!-- container .//  -->
+</section>
+
+{% endblock %}

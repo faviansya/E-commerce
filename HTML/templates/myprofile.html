@@ -1,0 +1,121 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section class="section-topbar border-top padding-y-sm">
+    <div class="container-fluid">
+        <span>Warung 999 The Best Of The Best</span> &nbsp <span class="text-success">Best Of The Year</span>
+    </div> <!-- container.// -->
+</section>
+<section class="section-content bg padding-y-sm">
+    <div class="container-fluid">
+        <div class="row">
+            {% include 'includes/asideprofile.html' %}
+
+            <div class="col-xl-8 col-md-9 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        Item Saya
+                    </div>
+                    <div class="card-body row">
+                        <div class="col-md-2 col-sm-3 col-lg-4">
+                            <figure class="item mb-3 text-center p-1 shadow-sm">
+                                <a href="#" class="img-wrap"> <img
+                                        src="{{ url_for('static', filename='images/Home/1.jpg') }}" class="img-md"></a>
+                                <figcaption class="info-wrap">
+                                    <a href="#" class="title">Salad Uenak</a>
+                                    <div class="price-wrap mb-3">
+                                        <span class="price-new">Rp. 32000</span> <del class="price-old">Rp. 31000</del>
+                                    </div> <!-- price-wrap.// -->
+                                </figcaption>
+                            </figure> <!-- card-product // -->
+                        </div> <!-- col.// -->
+                        <div class="col-md-2 col-sm-3 col-lg-4">
+                            <figure class="item mb-3 text-center p-1 shadow-sm">
+                                <a href="#" class="img-wrap"> <img
+                                        src="{{ url_for('static', filename='images/Home/22.jpg') }}" class="img-md"></a>
+                                <figcaption class="info-wrap">
+                                    <a href="#" class="title">The Terong</a>
+                                    <div class="price-wrap mb-3">
+                                        <span class="price-new">Rp. 50000</span> <del class="price-old">Rp. 72000</del>
+                                    </div> <!-- price-wrap.// -->
+                                </figcaption>
+                            </figure> <!-- card-product // -->
+                        </div> <!-- col.// -->
+                        <div class="col-md-2 col-sm-3 col-lg-4">
+                            <figure class="item mb-3 p-1 shadow-sm">
+                                <a href="#" class="img-wrap"> <img
+                                        src="{{ url_for('static', filename='images/Home/33.jpg') }}" class="img-md"></a>
+                                <figcaption class="info-wrap text-center">
+                                    <a href="#" class="title">Capcai Goreng</a>
+                                    <div class="price-wrap mb-3">
+                                        <span class="price-new">Rp. 12000</span>
+                                    </div> <!-- price-wrap.// -->
+                                </figcaption>
+                            </figure> <!-- card-product // -->
+                        </div> <!-- col.// -->
+                        <div class="col-md-2 col-sm-3 col-lg-4 ">
+                            <figure class="item mb-3 p-1 shadow-sm mt-5">
+                                <a href="#" class="img-wrap"> <img
+                                        src="{{ url_for('static', filename='images/Home/44.png') }}" class="img-md"></a>
+                                <figcaption class="info-wrap text-center">
+                                    <a href="#" class="title">Stik Sapi Bakar</a>
+                                    <div class="price-wrap mb-3">
+                                        <span class="price-new">Rp. 122000</span>
+                                    </div> <!-- price-wrap.// -->
+                                </figcaption>
+                            </figure> <!-- card-product // -->
+                        </div> <!-- col.// -->
+                        <div class="col-md-2 col-sm-3 col-lg-4 ">
+                            <figure class="item mb-3 p-1 shadow-sm mt-5">
+                                <a href="#" class="img-wrap"> <img
+                                        src="{{ url_for('static', filename='images/Home/55.jpg') }}" class="img-md"></a>
+                                <figcaption class="info-wrap text-center">
+                                    <a href="#" class="title">Tongkol Tepung Goreng</a>
+                                    <div class="price-wrap mb-3">
+                                        <span class="price-new">Rp. 20000</span>
+                                    </div> <!-- price-wrap.// -->
+                                </figcaption>
+                            </figure> <!-- card-product // -->
+                        </div> <!-- col.// -->
+                        <div class="col-md-2 col-sm-3 col-lg-4 ">
+                            <figure class="item mb-3 p-1 shadow-sm mt-5">
+                                <a href="#" class="img-wrap"> <img
+                                        src="{{ url_for('static', filename='images/Home/2.png') }}" class="img-md"></a>
+                                <figcaption class="info-wrap text-center">
+                                    <a href="#" class="title">Buah-Buahan</a>
+                                    <div class="price-wrap mb-3">
+                                        <span class="price-new">Rp. 2000</span>
+                                    </div> <!-- price-wrap.// -->
+                                </figcaption>
+                            </figure> <!-- card-product // -->
+                        </div> <!-- col.// -->
+
+                    </div> <!-- card-body.// -->
+                </div> <!-- card.// -->
+            </div> <!-- col // -->
+            <aside class="col-xl-2 col-md-3 col-sm-12 text-center">
+                <div class="card">
+                    <div class="card-header ">
+                        Status Kamu
+                    </div>
+                    <div class="card-body small">
+                        <div style="font-size: 15px; "> <u><b><a style="color: black;" href="{{url_for('myprofile')}}"
+                                        class="img-wrap">Warung 999</a></b></u></div>
+                        <hr>
+                        Status Member <br>
+                        VIP-User <i class="fa fa-gem" style="color: forestgreen;"></i>
+                        <hr>
+                        Status VIP
+                        <hr>
+                        VIP Sampai 365 Hari <br>
+                        Respon Kamu Terhadap Penjualan: 100%<br>
+                        <hr>
+                        <button type="button" class="btn btn-success">Edit Profile</button>
+                    </div> <!-- card-body.// -->
+                </div> <!-- card.// -->
+
+            </aside> <!-- col // -->
+        </div> <!-- row.// -->
+    </div><!-- container // -->
+</section>
+{% endblock %}
