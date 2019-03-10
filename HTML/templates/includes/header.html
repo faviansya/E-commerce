@@ -1,23 +1,23 @@
 <header class="section-header" >
-    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar" >
       <div class="container">
           <a class="navbar-brand" href="{{url_for('home')}}"><img class="logo" src="{{ url_for('static', filename='images/999-Logo.png') }}" height=100% alt="Warung 999" title="Warung 999"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop" aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" style="background:none;border:none;background-color: white;" type="button" data-toggle="collapse" data-target="#navbarTop" aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
     
         <div class="collapse navbar-collapse" id="navbarTop" >
           <ul class="navbar-nav mr-auto" >
             <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" >   Best Player </a>
-                <ul class="dropdown-menu" >
-                    <li><a class="dropdown-item" href="{{url_for('bestplayer')}}" id="inside" >Penjual Terbaik</a></li>
+                <ul class="dropdown-menu Navbar" >
+                    <li><a class="dropdown-item medianav" href="{{url_for('bestplayer')}}" id="inside" >Penjual Terbaik</a></li>
                     <li><a class="dropdown-item" href="{{url_for('barangterlaris')}}" id="inside">Barang Terbaik  </a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown"><a href="{{url_for('pembayaran')}}" class="nav-link dropdown-toggle">   Cara-Transaksi </a>
                 <!-- <li class="nav-item dropdown"><a href="{{url_for('pembayaran')}}" class="nav-link dropdown-toggle" data-toggle="dropdown">   Cara-Transaksi </a> -->
 
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu Navbar">
                     <li><a class="dropdown-item" href="{{url_for('pembayaran')}}" id="inside">Transfer Bank </a></li>
                     <li><a class="dropdown-item" href="{{url_for('pembayaran')}}" id="inside">Transer ATM</a></li>
                     <li><a class="dropdown-item" href="{{url_for('pembayaran')}}" id="inside">Bayar Di Indomaret </a></li>
@@ -26,7 +26,7 @@
             </li>
             <li class="nav-item dropdown"><a href="{{url_for('pertanyaanumum')}}" class="nav-link dropdown-toggle">   Hubungi CS </a>
                 <!-- <li class="nav-item dropdown"><a href="{{url_for('pertanyaanumum')}}" class="nav-link dropdown-toggle" data-toggle="dropdown">   Hubungi CS </a> -->
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu Navbar">
                     <li><a class="dropdown-item" href="{{url_for('pertanyaanumum')}}" id="inside">Pertanyaan Umum</a></li>
                     <li><a class="dropdown-item" href="{{url_for('masalahpelapak')}}" id="inside">Masalah Pelapak </a></li>
                     <li><a class="dropdown-item" href="{{url_for('masalahpenjualan')}}" id="inside">Masalah Penjualan </a></li>
@@ -46,7 +46,7 @@
         <div class="col-lg-4-24 col-sm-3">
         <div class="category-wrap dropdown py-1">
             <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" ><i class="fa fa-bars"></i> Categories</button>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu ">
                 <a class="dropdown-item" href="{{url_for('categories')}}">Buah </a>
                 <a class="dropdown-item" href="{{url_for('categories')}}">Lauk </a>
                 <a class="dropdown-item" href="{{url_for('categories')}}">Kopi</a>

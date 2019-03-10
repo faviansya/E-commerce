@@ -1,0 +1,45 @@
+@media only screen and (max-width: 580px) {
+    .admin-top {
+      margin-top: 20px;
+    }
+  }
+@media screen and (min-width: 10px) and (max-width: 990px) {
+    .Navbar {
+        color: white ;
+        background-color: #333;
+        border: none;
+    }
+    .medianav {
+        color: white;
+        }
+    .footer-title, .footer-title-highlight {
+        position: relative;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    .footer-title:after, .footer-title-highlight:after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        bottom: 0px;
+        left: 7%;
+        width: 30%;
+        border-bottom: none;
+    }
+
+    .footer-bottom1{
+        position: relative;
+    }
+    .footer-bottom1:after {
+        content: '';
+        position: absolute;
+        top: 0%;
+        bottom: 0px;
+        left: 10%;
+        width: 0%;
+        border-right: none;
+    }
+
+}
+  
