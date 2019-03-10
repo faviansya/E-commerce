@@ -1,0 +1,228 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section class="section-topbar border-top padding-y-sm">
+    <div class="container-fluid text-center">
+        <b><span>ADMIN PANEL FOR WARUNG 999</span></b>
+    </div> <!-- container.// -->
+</section>
+<section class="section-content bg padding-y-sm">
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-xl-2 col-md-3 col-sm-12 text-center">
+                <div class="card">
+                    <div class="card-header ">
+                        ADMIN PANEL
+                    </div>
+                    <div class="card-body small">
+                        <div style="font-size: 15px;"> <u><b>ADMIN</b></u></div>
+                        <a href="#" class="img-wrap mt-3"> <img
+                                src="{{ url_for('static', filename='images/admin/admin.jpg') }}" height="130px"
+                                style="border-radius: 40%;"></a>
+                        <hr>
+                        Level: ADMIN <br>
+                        <hr>
+                        <a href="">Edit Profile</a>
+
+                    </div> <!-- card-body.// -->
+                </div> <!-- card.// -->
+
+            </aside> <!-- col // -->
+            <div class="col-xl-10 col-md-9 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        ADMIN MENU
+                    </div>
+                    <div class="card-body row">
+                        <div class="col-md-2 col-sm-3 col-lg-4">
+                            <figure onclick="myFunction()" class="item mb-3 text-center p-1 border shadow-sm">
+                                <a href="javascript:;" class="title">
+                                    <figcaption class="info-wrap">
+                                        Get All Item
+                                    </figcaption>
+                                </a>
+                            </figure> <!-- card-product // -->
+                        </div> <!-- col.// -->
+                        <div class="col-md-2 col-sm-3 col-lg-4" id="hello">
+                            <figure onclick="myFunctionUser()" class="item mb-3 text-center p-1 border shadow-sm">
+                                <a href="javascript:;" class="title">
+                                    <figcaption class="info-wrap">
+                                        Get All User
+                                    </figcaption>
+                                </a>
+                            </figure> <!-- card-product // -->
+                        </div> <!-- col.// -->
+                        <div class="col-md-2 col-sm-3 col-lg-4">
+                            <figure class="item mb-3 text-center p-1 border shadow-sm">
+                                <a href="#" class="title">
+                                    <figcaption class="info-wrap">
+                                        Get All
+                                    </figcaption>
+                                </a>
+                            </figure> <!-- card-product // -->
+                        </div> <!-- col.// -->
+                        <div class="container" id="allItems">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="col-md-12 col-sm-12 col-lg-12">
+                                        <figure class="item mb-3 text-center p-1 shadow-sm">
+                                            <a href="#" class="img-wrap"> <img
+                                                    src="{{ url_for('static', filename='images/Home/1.jpg') }}"
+                                                    class="img-md"></a>
+                                            <figcaption class="info-wrap">
+                                                <a href="#" class="title">Salad Uenak</a>
+                                                <div class="price-wrap mb-3">
+                                                    <span class="price-new">Rp. 32.000</span> <del class="price-old">Rp.
+                                                        39.000</del>
+                                                </div> <!-- price-wrap.// -->
+                                            </figcaption>
+                                            <button type="submit" class="btn btn-warning"> Edit </button>
+                                            <button type="submit" class="btn btn-danger">Delete</button>
+                                        </figure> <!-- card-product // -->
+                                    </div> <!-- col.// -->
+                                </div>
+                                <div class="col-sm">
+                                    <div class="col-md-12 col-sm-12 col-lg-12">
+                                        <figure class="item mb-3 text-center p-1 shadow-sm">
+                                            <a href="#" class="img-wrap"> <img
+                                                    src="{{ url_for('static', filename='images/Home/22.jpg') }}"
+                                                    class="img-md"></a>
+                                            <figcaption class="info-wrap">
+                                                <a href="#" class="title">Terong</a>
+                                                <div class="price-wrap mb-3">
+                                                    <span class="price-new">Rp. 18.000</span> <del class="price-old">Rp.
+                                                        100.000</del>
+                                                </div> <!-- price-wrap.// -->
+                                            </figcaption>
+                                            <button type="submit" class="btn btn-warning"> Edit </button>
+                                            <button type="submit" class="btn btn-danger">Delete</button>
+                                        </figure> <!-- card-product // -->
+                                    </div> <!-- col.// -->
+
+                                </div>
+                                <div class="col-sm">
+                                    <div class="col-md-12 col-sm-12 col-lg-12">
+                                        <figure class="item mb-3 text-center p-1 shadow-sm">
+                                            <a href="#" class="img-wrap"> <img
+                                                    src="{{ url_for('static', filename='images/Home/33.jpg') }}"
+                                                    class="img-md"></a>
+                                            <figcaption class="info-wrap">
+                                                <a href="#" class="title">Capcay</a>
+                                                <div class="price-wrap mb-3">
+                                                    <span class="price-new">Rp. 22.000</span> <del class="price-old">Rp.
+                                                        45.000</del>
+                                                </div> <!-- price-wrap.// -->
+                                            </figcaption>
+                                            <button type="submit" class="btn btn-warning"> Edit </button>
+                                            <button type="submit" class="btn btn-danger">Delete</button>
+                                        </figure> <!-- card-product // -->
+                                    </div> <!-- col.// -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" id="allUser">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="col-lg-8 text-center">
+                                        <div class="card">
+                                            <div class="card-header ">
+                                                Profil Penjual
+                                            </div>
+                                            <div class="card-body small">
+                                                <div style="font-size: 15px;"> <u><b>Warung 999</b></u></div>
+                                                <a href="#" class="img-wrap mt-3"> <img
+                                                        src="{{ url_for('static', filename='images/penjual/penjual.jpg') }}"
+                                                        height="130px" style="border-radius: 40%;"></a>
+                                                <hr>
+                                                Level: Good <br>
+                                                Barang Terkirim: 1000
+                                                <hr>
+                                                Menerima 1.000.000 Pembeli
+                                                <hr>
+                                                Jarak Waktu Kirim: 1 Jam <br>
+                                                Respon Penjual: 100%<br>
+                                                <hr>
+                                                <a href="">Kunjungi Profil</a>
+                                                <br>
+                                                <div class="mt-3">
+                                                    <button type="submit" class="btn btn-warning"> Edit </button>
+                                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                                </div>
+                                            </div> <!-- card-body.// -->
+                                        </div> <!-- card.// -->
+
+                                    </div> <!-- col // -->
+
+                                </div>
+                                <div class="col-sm">
+                                    <div class="col-lg-8 text-center">
+                                        <div class="card">
+                                            <div class="card-header ">
+                                                Profil Penjual
+                                            </div>
+                                            <div class="card-body small">
+                                                <div style="font-size: 15px;"> <u><b>Warung 999</b></u></div>
+                                                <a href="#" class="img-wrap mt-3"> <img
+                                                        src="{{ url_for('static', filename='images/penjual/penjual3.jpg') }}"
+                                                        height="130px" style="border-radius: 40%;"></a>
+                                                <hr>
+                                                Level: Good <br>
+                                                Barang Terkirim: 1000
+                                                <hr>
+                                                Menerima 1.000.000 Pembeli
+                                                <hr>
+                                                Jarak Waktu Kirim: 1 Jam <br>
+                                                Respon Penjual: 100%<br>
+                                                <hr>
+                                                <a href="">Kunjungi Profil</a>
+                                                <br>
+                                                <div class="mt-3">
+                                                    <button type="submit" class="btn btn-warning"> Edit </button>
+                                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                                </div>
+                                            </div> <!-- card-body.// -->
+                                        </div> <!-- card.// -->
+
+                                    </div> <!-- col // -->
+                                </div>
+                                <div class="col-sm">
+                                    <div class="col-lg-8 text-center">
+                                        <div class="card">
+                                            <div class="card-header ">
+                                                Profil Penjual
+                                            </div>
+                                            <div class="card-body small">
+                                                <div style="font-size: 15px;"> <u><b>Warung 999</b></u></div>
+                                                <a href="#" class="img-wrap mt-3"> <img
+                                                        src="{{ url_for('static', filename='images/penjual/penjual2.jpg') }}"
+                                                        height="130px" style="border-radius: 40%;"></a>
+                                                <hr>
+                                                Level: Good <br>
+                                                Barang Terkirim: 1000
+                                                <hr>
+                                                Menerima 1.000.000 Pembeli
+                                                <hr>
+                                                Jarak Waktu Kirim: 1 Jam <br>
+                                                Respon Penjual: 100%<br>
+                                                <hr>
+                                                <a href="">Kunjungi Profil</a>
+                                                <br>
+                                                <div class="mt-3">
+                                                    <button type="submit" class="btn btn-warning"> Edit </button>
+                                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                                </div>
+                                            </div> <!-- card-body.// -->
+                                        </div> <!-- card.// -->
+
+                                    </div> <!-- col // -->
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- card-body.// -->
+                </div> <!-- card.// -->
+            </div> <!-- col // -->
+        </div> <!-- row.// -->
+
+    </div><!-- container // -->
+</section>
+{% endblock %}
