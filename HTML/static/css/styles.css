@@ -203,3 +203,7 @@ section .section-title {
     background-repeat: no-repeat;
     background-position: center; 
 }
+
+.text-whites{
+    color: black;
+}
