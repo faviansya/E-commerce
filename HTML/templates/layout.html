@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/HF.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <link href="{{ url_for('static', filename='plugins/slickslider/slick.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ url_for('static', filename='plugins/slickslider/slick-theme.css') }}" rel="stylesheet"
         type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <script src="{{ url_for('static', filename='plugins/slickslider/slick.min.js') }}"></script>
     <link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet"
         media="only screen and (max-width: 1200px)" />
@@ -39,6 +40,10 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+    <script>
+    new WOW().init();
+    </script>
 
 </body>
 {% include 'includes/footer.html' %}
